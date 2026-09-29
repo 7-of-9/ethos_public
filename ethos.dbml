@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ethos" Class="ethosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" SettingsObjectName="ethos_viewer.Properties.Settings" SettingsPropertyName="ethosConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ethos" Member="ethos">
+    <Type Name="etho">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="quote" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="pic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="addedBy" Type="System.String" DbType="VarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="addedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="rank" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="attrib" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="VarChar(4096)" CanBeNull="true" />
+      <Column Name="nsfw" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="special" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="hash" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
